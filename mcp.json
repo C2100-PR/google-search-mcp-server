@@ -1,0 +1,25 @@
+{
+  "name": "google-search",
+  "version": "0.1.0",
+  "description": "Google Search MCP Server",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "mcp": {
+    "type": "search",
+    "capabilities": ["web-search"],
+    "configuration": {
+      "required": {
+        "GOOGLE_API_KEY": {
+          "type": "string",
+          "description": "Google Custom Search API Key"
+        },
+        "GOOGLE_SEARCH_ENGINE_ID": {
+          "type": "string",
+          "description": "Google Custom Search Engine ID"
+        }
+      }
+    }
+  }
+}
